@@ -9,7 +9,6 @@ public class Sound {
         dist = 1100*(15/2);
 
         System.out.println(dist);
-        System.out.println(10.2f);
 
     }
 
