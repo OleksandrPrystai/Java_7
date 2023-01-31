@@ -16,6 +16,7 @@ public class Help2 {
             System.out.println("Виберіть:");
 
             choice = (char) System.in.read();
+
             do {
                 ignore = (char) System.in.read();
             } while (ignore != '\n');
