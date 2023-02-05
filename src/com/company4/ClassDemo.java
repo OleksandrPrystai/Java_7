@@ -1,4 +1,4 @@
-package company4;
+package com.company4;
 
 class Vehicle {
     int passengers;
