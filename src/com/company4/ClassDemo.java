@@ -5,16 +5,17 @@ class Vehicle {
     int fuelcap;
     int lkm;
 
-    void range() {
-        System.out.println("Дальність -" + (fuelcap / lkm) * 100);
+    int range() {
+        return fuelcap * lkm;
     }
+
 }
 
 class VehicleDemo {
     public static void main(String args[]) {
         Vehicle opel = new Vehicle();
         Vehicle audi = new Vehicle();
-        double rangeOpel, rangeAudi;
+        int rangeOpel, rangeAudi;
 
         opel.passengers = 5;
         opel.fuelcap = 61;
@@ -24,8 +25,9 @@ class VehicleDemo {
         audi.fuelcap = 55;
         audi.lkm = 8;
 
-        opel.range();
-        audi.range();
-
+        rangeAudi = audi.range();
+        System.out.println(rangeAudi);
+        rangeOpel = opel.range();
+        System.out.println(rangeOpel);
     }
 }
